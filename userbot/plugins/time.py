@@ -15,7 +15,7 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 async def _(event):
     if event.fwd_from:
         return
-    current_time = datetime.now().strftime("⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡ \nFRIDAY TIMEZONE \n LOCATION: India🇮🇳 \n  Time: %H:%M:%S \n  Date: %d.%m.%y \n⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡")
+    current_time = datetime.now().strftime("• \nSAM RAMADHAN\n Lokasi: Indonesia \n  Waktu: %H:%M:%S \n  Tanggal: %d.%m.%y \n➡➡➡➡➡➡➡")
     start = datetime.now()
     input_str = event.pattern_match.group(1)
     reply_msg_id = event.message.id
@@ -28,22 +28,22 @@ async def _(event):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)  # pylint:disable=E0602
     # pylint:disable=E0602
     required_file_name = Config.TMP_DOWNLOAD_DIRECTORY + " " + str(datetime.now()) + ".webp"
-    img = Image.new("RGBA", (350, 220), color=(0, 0, 0, 115))
+    img = Image.new("RGBA", (350, 220), color=(136, 255, 121, 255))
     fnt = ImageFont.truetype(FONT_FILE_TO_USE, 30)
     drawn_text = ImageDraw.Draw(img)
-    drawn_text.text((10, 10), current_time, font=fnt, fill=(255, 255, 255))
+    drawn_text.text((10, 10), current_time, font=fnt, fill=(0, 0, 0))
     img.save(required_file_name)
     await borg.send_file(  # pylint:disable=E0602
         event.chat_id,
         required_file_name,
-        caption="Userbot: Powered by @pureindialover",
+        caption="@SamRamadhan",
         # Courtesy: @ManueI15
         reply_to=reply_msg_id
     )
     os.remove(required_file_name)
     end = datetime.now()
     time_taken_ms = (end - start).seconds
-    await event.edit("Created sticker in {} seconds".format(time_taken_ms))
+    await event.edit("Membuat stiker dalam waktu {} detik".format(time_taken_ms))
     await asyncio.sleep(5)
     await event.delete()
 
