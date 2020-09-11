@@ -24,7 +24,7 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PLUGIN_CHANNEL,  # pylint:disable=E0602
-                "#AfkLogger My Boss Went Afk"
+                "#AfkLogger Anda sudah tidak afk"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
@@ -61,15 +61,15 @@ async def _(event):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await event.edit(f"My Boss Is Going Afk ! And The Reason is {reason}")
+            await event.edit(f"Sekarang saya AFK! Alasannya {reason}")
         else:
-            await event.edit(f"My Boss is Going")
+            await event.edit(f"Sekarang saya AFK")
         await asyncio.sleep(5)
         await event.delete()
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PLUGIN_CHANNEL,  # pylint:disable=E0602
-                f"#AfkLogger Reason : {reason}"
+                f"#AfkLogger Saat ini anda sedang afk : {reason}"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E0602
@@ -121,10 +121,10 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**My Boss is AFK** ! \n\n**Reason** : `{reason}` \n\n**Afk Since** : {afk_since}" + \
-            f"\n\n__Kindly Leave A Message__ ! \n`He Will Reply To You Soon !`" \
+        message_to_reply = f"**Maaf, saat ini Boss saya sedang AFK** \n\n**Alasannya** : `{reason}` \n\n**Afk semenjak** : {datime_since_afk} yang lalu" + \
+            f"\n\n__Sebentar lagi mungkin dia aktif__ ! \n`Dia pasti akan merespon!`" \
             if reason \
-            else f"**Hello, Boss Is AFK Right Now And May Be Forgot List Reason ! Any Way He Will Come Back Soon !**"
+            else f"**Halo, Boss saya sedang AFK.** Afk sejak {datime_since_afk} yang lalu."
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
