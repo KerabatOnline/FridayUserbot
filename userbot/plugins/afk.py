@@ -122,7 +122,7 @@ async def on_afk(event):
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = f"**Maaf, saat ini Boss saya sedang AFK** \n\n**Alasannya** : `{reason}` \n\n {afk_since}" + \
-            f"\n\n__Sebentar lagi mungkin dia aktif__ ! \n`Dia pasti akan merespon!`" \
+            f"\n\nSebentar lagi mungkin dia aktif! \nDia pasti akan merespon" \
             if reason \
             else f"**Halo, Boss saya sedang AFK.** {afk_since}"
         msg = await event.reply(message_to_reply)
