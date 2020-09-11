@@ -1,4 +1,4 @@
-# FRIDAY
+# USERBOT
 
 <p align="center">
 <img src="friday.png" alt="FRIDAY USERBOT">
