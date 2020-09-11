@@ -6,19 +6,19 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
-PM_IMG = "https://telegra.ph/file/717b3eff2ba34d1de6b98.png"
-pm_caption = "`USERBOT IS:` **ONLINE**\n\n"
-pm_caption += "**SYSTEM STATUS**\n"
-pm_caption += "`TELETHON VERSION:` **6.0.9**\n`Python:` **3.7.4**\n"
-pm_caption += "`DATABASE STATUS:` **Functional**\n"
-pm_caption += "**Current Branch** : `master`\n"
-pm_caption += "**Friday OS** : `3.14`\n"
-pm_caption += "**Current Sat** : `StarkGangSat-2.25`\n"
-pm_caption += f"**Bosscu** : {DEFAULTUSER} \n"
-pm_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
-pm_caption += "**License** : [MIT Licence](github.com/StarkGang/FridayUserbot/blob/master/LICENSE)\n"
-pm_caption += "Copyright : By [StarkGang@Github](GitHub.com/StarkGang)\n"
-pm_caption += " [Deploy FridayUserbot](https://telegra.ph/FRIDAY-06-15)"
+PM_IMG = "https://telegra.ph/file/70eab28fecda58256db63.jpg"
+pm_caption = "`USERBOT STATUS :` **AKTIF**\n\n"
+pm_caption += "**PROFIL PENGGUNA**\n"
+pm_caption += "**NAMA** : `AI`\n**A.K.A** : `SEN`\n"
+pm_caption += "**DOMISILI**: `KALSEL`\n"
+pm_caption += "**JENIS KELAMIN** : `PEREMPUAN`\n"
+pm_caption += "**UMUR** : `MASIH MUDA POKOKNYA`\n"
+pm_caption += f"**USERNAME** : {DEFAULTUSER} \n"
+pm_caption += "**SOSMED** : [TWITTER](https://twitter.com/aisyyynjm) \n"
+pm_caption += "__Merupakan CoFounder dari__ @KerabatOnline __Group__ \n\n"
+pm_caption += "• [Kerabat Online Channel](https://t.me/KerabatOnline_Ch)\n"
+pm_caption += "• [Kerabat Online Moment](https://t.me/KerabatMoment)\n"
+pm_caption += "• [Kerabat Online Twitter](https://twitter.com/KerabatOnline)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
