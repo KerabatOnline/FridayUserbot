@@ -62,7 +62,7 @@ async def sticklet(event):
         pass
 
     
-@borg.on(admin_cmd(pattern="stcr2 ?(?:(.*?) \| )?(.*)", allow_sudo=True))
+@borg.on(admin_cmd(pattern="sttxt ?(?:(.*?) \| )?(.*)", allow_sudo=True))
 async def sticklet(event):
     R = random.randint(0,256)
     G = random.randint(0,256)
