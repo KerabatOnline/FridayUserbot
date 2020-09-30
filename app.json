@@ -29,33 +29,33 @@
     },
     "ALIVE_NAME": {
       "description": "Fill your Full name or Username like @Mariodevs.",
-      "value": ""
+      "value": "@Estrlaa"
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "1632069"
     },
     "REM_BG_API_KEY": {
       "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
-      "value": "",
+      "value": "rtprbq3Q9TQHeEpeAn13H6FB",
       "required": false
     },
     "LYDIA_API_KEY": {
       "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
-      "value": "",
+      "value": "013a014dc0d094bea76e1c645228e1cad1f3c21160fd61493602b5975893843c73a9176b3a3b65a670317f8ac85804f27a5d829139be2996b51977ed49092fc5",
       "required": false
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "a6ffb76916b239d4929fc6be0496d106"
     },
     "PLUGIN_CHANNEL": {
       "description": "Create a private group add rose  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": ""
+      "value": "-1001457631593"
     },
     "PRIVATE_GROUP_ID": {
       "description": "Create a private group add rose bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": ""
+      "value": "-1001457631593"
     },
     "STRING_SESSION": {
       "description": "Get this value from https://fridayuserbot.midhunkm1294bit.repl.run",
@@ -90,7 +90,7 @@
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "813878981",
+      "value": "1091369764",
       "required": false
     },
     "CHROME_BIN": {
@@ -128,7 +128,7 @@
     },
     "TZ": {
       "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "",
+      "value": "Asia/Pontianak",
       "required": false
     }
 
